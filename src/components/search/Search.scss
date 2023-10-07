@@ -1,0 +1,47 @@
+@import "../styles/colors";
+@import "../styles/mixin";
+@import "../styles/fonts";
+
+
+
+.search{
+    @include flex-center;
+    
+    margin-right: 5rem;
+
+    .icon_search{
+        color:$color-gray;
+        font-size: 17px;
+        cursor: pointer;
+    }
+}
+.btn_search{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+    color: $color-gray;
+}
+
+.btn_right{
+    @include flex-center;
+    margin-right: 2rem;
+    
+
+    button{
+        border: none;
+        margin: 0 1.3rem;
+        cursor: pointer;
+        outline: none;
+
+        a{
+            color: $color-gray;
+            font-weight: 700;
+        }
+    }
+    .shop_bascket{
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

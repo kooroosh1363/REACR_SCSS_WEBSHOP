@@ -1,0 +1,51 @@
+@import "../styles/colors";
+@import "../styles/mixin";
+@import "../styles/fonts";
+
+
+.navbar {
+    position: sticky;
+    top: 0px;
+
+    nav {
+        @include flex-center;
+        justify-content: space-between;
+        height: 4rem;
+        background-color: $color-main;
+
+
+        .item_ul {
+
+
+            .item_li {
+                a {
+                    color: $color-sec;
+                    margin: 0 1rem;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .color{
+                    color: $color-green;
+                }
+            }
+
+
+        }
+        .logo{
+            font-family: $lora-font;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 2rem;
+            letter-spacing: .5rem;
+
+            h1{
+                color: $color-green;
+                cursor: pointer;
+            }
+        }
+
+        .right{
+            @include flex-center;
+        }
+    }
+}
