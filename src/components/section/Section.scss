@@ -1,0 +1,27 @@
+@import "../styles/colors";
+@import "../styles/mixin";
+@import "../styles/fonts";
+
+
+.section{
+    background: linear-gradient(to right bottom, rgba(245, 136, 11, 0.438), rgba(236, 244, 15, 0.181)), url(../../assets/image/dress1.jpg);
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+
+    .content{
+        margin: 12rem;
+        text-align: center;
+        
+        h1{
+            font-size: 4rem;
+            color: $color-green;
+        }
+        button{
+            border: none;
+            background:none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
