@@ -2,7 +2,7 @@ import React from 'react'
 import "./Navbar.scss"
 import { Link } from 'react-router-dom'
 import Search from '../search/Search'
-import logo from "../../assets/image/raad.png";
+// import logo from "../../assets/image/raad.png";
 
 const Navbar = () => {
   return (

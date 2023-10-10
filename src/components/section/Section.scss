@@ -1,27 +1,48 @@
 @import "../styles/colors";
 @import "../styles/mixin";
 @import "../styles/fonts";
+@import "../styles/button";
 
 
-.section{
-    background: linear-gradient(to right bottom, rgba(245, 136, 11, 0.438), rgba(236, 244, 15, 0.181)), url(../../assets/image/dress1.jpg);
+.section {
+    background: linear-gradient(to right bottom, rgba(8, 243, 208, 0.438), rgba(199, 246, 11, 0.181)), url(../../assets/image/dress1.jpg);
     height: 100vh;
     background-size: cover;
     overflow: hidden;
 
-    .content{
+    .content {
         margin: 12rem;
         text-align: center;
-        
-        h1{
+
+        h2 {
             font-size: 4rem;
             color: $color-green;
+            text-shadow: 4px 4px 4px $color-main;
         }
-        button{
-            border: none;
-            background:none;
-            outline: none;
-            cursor: pointer;
+
+        h1 {
+            font-size: 4rem;
+            color: $color-green;
+            text-shadow: 4px 4px 4px $color-main;
+        }
+
+        button {
+            @include button;
+        }
+
+        button:hover {
+            @include hover;
+        }
+    }
+
+    .text_btn {
+        margin-left: 1.4rem;
+
+        p {
+            color: $color-gray;
+            font-weight: 600;
+            font-size: 2rem;
+            text-align: right;
         }
     }
 }
