@@ -1,0 +1,30 @@
+@import "../styles/colors";
+@import "../styles/fonts";
+
+
+.sec_section {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-main;
+    padding: 2rem;
+
+    .carts {
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        gap: 2rem;
+        justify-content: center;
+
+        .cart {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            border: 2px solid $color-gray;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
