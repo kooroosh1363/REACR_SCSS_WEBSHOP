@@ -1,0 +1,10 @@
+@mixin focus-ring {
+  outline: 3px solid rgba(45, 105, 87, .3);
+  outline-offset: 3px;
+}
+
+@mixin surface {
+  border: 1px solid $line;
+  border-radius: $radius;
+  background: $surface;
+}
